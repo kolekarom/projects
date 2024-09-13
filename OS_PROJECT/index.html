@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CPU Scheduling Simulator</h1>
+        <form id="process-form">
+            <label for="process-name">Process Name:</label>
+            <input type="text" id="process-name" required>
+            
+            <label for="arrival-time">Arrival Time:</label>
+            <input type="number" id="arrival-time" required>
+            
+            <label for="burst-time">Burst Time:</label>
+            <input type="number" id="burst-time" required>
+            
+            <label for="time-quantum" id="time-quantum-label" style="display:none;">Time Quantum (for RR):</label>
+            <input type="number" id="time-quantum" style="display:none;">
+            
+            <label for="algorithm">Select Scheduling Algorithm:</label>
+            <select id="algorithm" required>
+                <option value="fcfs">First-Come, First-Served (FCFS)</option>
+                <option value="sjf">Shortest Job First (SJF)</option>
+                <option value="rr">Round Robin (RR)</option>
+            </select>
+
+            <button type="submit">Add Process</button>
+        </form>
+
+        <div id="process-list">
+            <h2>Process List</h2>
+            <ul id="list"></ul>
+        </div>
+
+        <div id="results">
+            <h2>Scheduling Results</h2>
+            <div id="results-table"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
