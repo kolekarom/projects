@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CPU Scheduling Algorithms</h1>
+        <form id="process-form">
+            <label for="process-name">Process Name:</label>
+            <input type="text" id="process-name" required>
+
+            <label for="arrival-time">Arrival Time:</label>
+            <input type="number" id="arrival-time" required>
+
+            <label for="burst-time">Burst Time:</label>
+            <input type="number" id="burst-time" required>
+
+            <label for="algorithm">Algorithm:</label>
+            <select id="algorithm" required>
+                <option value="fcfs">First-Come, First-Served (FCFS)</option>
+                <option value="sjf">Shortest Job First (SJF)</option>
+                <option value="rr">Round Robin (RR)</option>
+            </select>
+
+            <label for="time-quantum" id="time-quantum-label" style="display:none;">Time Quantum:</label>
+            <input type="number" id="time-quantum" style="display:none;">
+
+            <button type="submit">Add Process</button>
+        </form>
+
+        <h2>Processes</h2>
+        <ul id="list"></ul>
+
+        <h2>Gantt Chart</h2>
+        <div id="gantt-chart"></div>
+
+        <h2>Results</h2>
+        <div id="results-table"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
