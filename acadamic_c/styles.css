@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.calendar-month {
+    margin: 20px 0;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.calendar-table th, .calendar-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.calendar-table td.empty {
+    background-color: #f9f9f9;
+}
+
+.calendar-table td:hover {
+    background-color: #f1f1f1;
+}
+
+.calendar-table .event {
+    background-color: #ffccbc;
+}
+
+.calendar-table .holiday {
+    background-color: #ffe0b2;
+}
+
+.calendar-table .preparation {
+    background-color: #bbdefb;
+}
+
+.calendar-table .academic {
+    background-color: #c8e6c9;
+}
+
+.calendar-table .exam {
+    background-color: #f8bbd0;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls input, .controls select {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+}
+
+.controls button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+#events, #holidays {
+    margin-top: 20px;
+}

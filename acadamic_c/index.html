@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Academic Calendar 2024</h1>
+        <div id="calendar"></div>
+        <div id="events"></div>
+        <div id="holidays"></div>
+
+        <div class="controls">
+            <h2>Search Date</h2>
+            <input type="date" id="searchDateInput">
+            <button onclick="searchDate()">Search</button>
+
+            <h2>Add Remark</h2>
+            <input type="date" id="remarkDateInput">
+            <input type="text" id="remarkInput" placeholder="Enter your remark">
+            <button onclick="addRemark()">Add Remark</button>
+
+            <h2>Find Holidays</h2>
+            <select id="holidayMonthSelect">
+                <option value="">Select Month</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <button onclick="getHolidays()">Find Holidays</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
