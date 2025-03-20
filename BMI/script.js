@@ -1,3 +1,4 @@
+
 function calculateBMI() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value) / 100; // Convert cm to meters
@@ -7,6 +8,7 @@ function calculateBMI() {
     if (isNaN(weight) || isNaN(height) || isNaN(age)) {
       alert('Please enter valid numbers!');
       return;
+      
     }
   
     // Calculate BMI
